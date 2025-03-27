@@ -96,41 +96,41 @@
 <!--                app:layout_constraintTop_toTopOf="@+id/lock_image_view" />-->
 <!--        </androidx.constraintlayout.widget.ConstraintLayout>-->
 
-        <androidx.constraintlayout.widget.ConstraintLayout
-            android:id="@+id/about"
-            android:layout_width="0dp"
-            android:layout_height="45dp"
-            android:layout_marginTop="10dp"
-            android:layout_marginBottom="20dp"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="@+id/workLayout"
-            app:layout_constraintStart_toStartOf="@+id/workLayout"
-            app:layout_constraintTop_toBottomOf="@+id/workLayout">
+<!--        <androidx.constraintlayout.widget.ConstraintLayout-->
+<!--            android:id="@+id/about"-->
+<!--            android:layout_width="0dp"-->
+<!--            android:layout_height="45dp"-->
+<!--            android:layout_marginTop="10dp"-->
+<!--            android:layout_marginBottom="20dp"-->
+<!--            app:layout_constraintBottom_toBottomOf="parent"-->
+<!--            app:layout_constraintEnd_toEndOf="@+id/workLayout"-->
+<!--            app:layout_constraintStart_toStartOf="@+id/workLayout"-->
+<!--            app:layout_constraintTop_toBottomOf="@+id/workLayout">-->
 
-            <ImageView
-                android:id="@+id/about_image_view"
-                android:layout_width="28dp"
-                android:layout_height="24dp"
-                android:layout_marginStart="2dp"
-                android:scaleType="centerInside"
-                app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="parent"
-                app:srcCompat="@drawable/log_off" />
+<!--            <ImageView-->
+<!--                android:id="@+id/about_image_view"-->
+<!--                android:layout_width="28dp"-->
+<!--                android:layout_height="24dp"-->
+<!--                android:layout_marginStart="2dp"-->
+<!--                android:scaleType="centerInside"-->
+<!--                app:layout_constraintBottom_toBottomOf="parent"-->
+<!--                app:layout_constraintStart_toStartOf="parent"-->
+<!--                app:layout_constraintTop_toTopOf="parent"-->
+<!--                app:srcCompat="@drawable/log_off" />-->
 
-            <TextView
-                android:id="@+id/about_text_view"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginStart="15dp"
-                android:layout_marginBottom="3dp"
-                android:text="关于"
-                android:textColor="#878A93"
-                android:textSize="18sp"
-                app:layout_constraintBottom_toBottomOf="@+id/about_image_view"
-                app:layout_constraintStart_toEndOf="@+id/about_image_view"
-                app:layout_constraintTop_toTopOf="@+id/about_image_view" />
-        </androidx.constraintlayout.widget.ConstraintLayout>
+<!--            <TextView-->
+<!--                android:id="@+id/about_text_view"-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_marginStart="15dp"-->
+<!--                android:layout_marginBottom="3dp"-->
+<!--                android:text="关于"-->
+<!--                android:textColor="#878A93"-->
+<!--                android:textSize="18sp"-->
+<!--                app:layout_constraintBottom_toBottomOf="@+id/about_image_view"-->
+<!--                app:layout_constraintStart_toEndOf="@+id/about_image_view"-->
+<!--                app:layout_constraintTop_toTopOf="@+id/about_image_view" />-->
+<!--        </androidx.constraintlayout.widget.ConstraintLayout>-->
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 
