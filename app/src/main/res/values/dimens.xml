@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="layer_corner">10dp</dimen>
+    <dimen name="layer_outline_corner">8dp</dimen>
+</resources>

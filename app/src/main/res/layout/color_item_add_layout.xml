@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:paddingBottom="5dp">
+    
+    <io.github.florent37.shapeofview.shapes.RoundRectView
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:background="@color/white"
+        app:shape_roundRect_bottomLeftRadius="10dp"
+        app:shape_roundRect_bottomRightRadius="10dp"
+        app:shape_roundRect_topLeftRadius="10dp"
+        app:shape_roundRect_topRightRadius="10dp"
+        app:shape_roundRect_borderColor="@color/gray"
+        app:shape_roundRect_borderWidth="1dp">
+        <ImageView
+            android:id="@+id/color_view"
+            android:src="@drawable/color_add"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+    </io.github.florent37.shapeofview.shapes.RoundRectView>
+
+</FrameLayout>

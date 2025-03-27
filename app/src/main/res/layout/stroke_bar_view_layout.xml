@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="74dp"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/menu_corner_round_shape">
+
+    <TextView
+        android:id="@+id/tv_size"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="12"
+        android:textSize="18sp"
+        android:textColor="@color/white"
+        android:layout_marginTop="20dp"
+        android:visibility="invisible"
+        app:layout_constraintStart_toStartOf="@+id/bar_view"
+        app:layout_constraintEnd_toEndOf="@+id/bar_view"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+    <com.xuhh.brushify.ui.fragment.home.view.strocksize.XHHSeekBarView
+        android:id="@+id/bar_view"
+        android:layout_width="30dp"
+        android:layout_height="164dp"
+        android:layout_marginTop="10dp"
+        app:min="1"
+        app:max="50"
+        app:progress="1"
+        android:orientation="vertical"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tv_size"
+        />
+
+    <View
+        android:id="@+id/indicatorView"
+        android:layout_width="50dp"
+        android:layout_height="28dp"
+        android:layout_margin="15dp"
+        android:background="@drawable/indicator_corner_round_shape"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/bar_view"/>
+
+    <ImageView
+        android:id="@+id/dot_empty"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/dot_empty"
+        android:layout_marginTop="17dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/bar_view"/>
+
+    <ImageView
+        android:id="@+id/dot_fill"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="37dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/dot_empty"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:srcCompat="@drawable/dot_fill" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

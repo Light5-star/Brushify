@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_margin="10dp">
+
+    <com.google.android.material.card.MaterialCardView
+        android:layout_width="224dp"
+        android:layout_height="140dp"
+        app:cardBackgroundColor="#434755"
+        app:cardCornerRadius="20dp"
+        app:cardElevation="8dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/iv_thumbnail"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#2A2E3B"
+            android:scaleType="centerCrop"
+            app:srcCompat="@drawable/default_bg" />
+
+        <ImageView
+            android:id="@+id/iv_un_choose"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
+            app:srcCompat="@drawable/unchoose" />
+        <ImageView
+            android:id="@+id/iv_selected"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:layout_marginStart="9dp"
+            android:layout_marginTop="9dp"
+            app:srcCompat="@drawable/choose" />
+    </com.google.android.material.card.MaterialCardView>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.xuhh.brushify.ui.fragment.home.view.HSVColorPickerView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/corner_round_shape">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="30dp">
+
+        <com.xuhh.brushify.ui.fragment.home.colorPicker.ColorPickerView
+            android:id="@+id/pickerView"
+            android:layout_width="250dp"
+            android:layout_height="0dp"
+            app:layout_constraintDimensionRatio="h,1:1"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <androidx.appcompat.widget.AppCompatSeekBar
+            android:id="@+id/saturationBar"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:max="100"
+            android:min="0"
+            android:progress="100"
+            android:progressBackgroundTint="@color/black"
+            android:progressTint="@color/light_blue"
+            android:thumbTint="@color/green"
+            app:layout_constraintEnd_toStartOf="@+id/tvSaturation"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toEndOf="@+id/textView2"
+            app:layout_constraintTop_toBottomOf="@+id/pickerView" />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:text="饱和度"
+            android:textColor="@color/white"
+            app:layout_constraintBottom_toBottomOf="@+id/saturationBar"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/saturationBar" />
+
+        <TextView
+            android:id="@+id/tvSaturation"
+            android:layout_width="40dp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="10dp"
+            android:gravity="center"
+            android:text="100"
+            android:textColor="@color/white"
+            app:layout_constraintBottom_toBottomOf="@+id/saturationBar"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/saturationBar" />
+
+        <androidx.appcompat.widget.AppCompatSeekBar
+            android:id="@+id/lightnessBar"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:max="100"
+            android:min="0"
+            android:progress="100"
+            android:progressBackgroundTint="@color/black"
+            android:progressTint="@color/light_blue"
+            android:thumbTint="@color/green"
+            app:layout_constraintEnd_toStartOf="@+id/tvLightness"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toEndOf="@+id/textView3"
+            app:layout_constraintTop_toBottomOf="@+id/saturationBar" />
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:text="明亮度"
+            android:textColor="@color/white"
+            app:layout_constraintBottom_toBottomOf="@+id/lightnessBar"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/lightnessBar" />
+
+        <TextView
+            android:id="@+id/tvLightness"
+            android:layout_width="40dp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="10dp"
+            android:gravity="center"
+            android:text="100"
+            android:textColor="@color/white"
+            app:layout_constraintBottom_toBottomOf="@+id/lightnessBar"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/lightnessBar" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/colorRecyclerView"
+            android:layout_width="0dp"
+            android:layout_height="150dp"
+            android:layout_marginTop="20dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="@id/tvLightness"
+            app:layout_constraintStart_toStartOf="@id/textView3"
+            app:layout_constraintTop_toBottomOf="@id/lightnessBar" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</com.xuhh.brushify.ui.fragment.home.view.HSVColorPickerView>

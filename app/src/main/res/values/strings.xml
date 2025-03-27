@@ -1,0 +1,44 @@
+<resources>
+    <string name="app_name">Brushify</string>
+
+    <string name="menu">&#xe6c1;</string>
+
+    <string name="move">&#xe6fd;</string>
+    <string name="eraser">&#xeb9e;</string>
+    <string name="line_arrow">&#xe60c;</string>
+    <string name="circle">&#xe642;</string>
+    <string name="triangle">&#xe643;</string>
+    <string name="rectangle">&#xe648;</string>
+    <string name="text">&#xe72c;</string>
+    <string name="line">&#xe684;</string>
+    <string name="bezel">&#xe65b;</string>
+    <string name="location">&#xe603;</string>
+    <string name="curve">&#xe838;</string>
+    <string name="brush">&#xe6fa;</string>
+
+
+    <string name="works">&#xe604;</string>
+    <string name="music">&#xe600;</string>
+    <string name="share">&#xe7e7;</string>
+    <string name="picture">&#xe621;</string>
+    <string name="account">&#xe63b;</string>
+    <string name="layer">&#xe768;</string>
+    <string name="add">&#xe60e;</string>
+    <string name="deleteCircle">&#xe652;</string>
+    <string name="download">&#xe703;</string>
+    <string name="save">&#xe67c;</string>
+
+
+    <string name="undo" >&#xe624;</string>
+    <string name="garbage">&#xe6a6;</string>
+    <string name="pencil">&#xe6d9;</string>
+    <string name="palette">&#xe615;</string>
+
+    <string name="register">&#xe683;</string>
+    <string name="not_login">&#xe610;</string>
+    <string name="change_password_type">&#xe87b;</string>
+    <string name="close_arrow">&#xe676;</string>
+    <string name="open_arrow">&#xe675;</string>
+    <string name="deleteX">&#xe651;</string>
+    <string name="go_back">&#xe601;</string>
+</resources>
