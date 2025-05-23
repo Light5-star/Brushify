@@ -1,17 +1,13 @@
 package com.xuhh.brushify.ui.fragment.welcome
 
 import android.animation.Animator
-import androidx.fragment.app.activityViewModels
 import androidx.navigation.fragment.findNavController
 import com.xuhh.brushify.R
 import com.xuhh.brushify.databinding.FragmentWelcomeBinding
 import com.xuhh.brushify.ui.base.BaseFragment
 import com.xuhh.brushify.viewModel.HomeViewModel
-import com.xuhh.brushify.viewModel.UserViewModel
-import java.util.Date
 
 class WelcomeFragment: BaseFragment<FragmentWelcomeBinding>() {
-    private val viewModel:UserViewModel by activityViewModels()
     override fun initBinding(): FragmentWelcomeBinding {
         return FragmentWelcomeBinding.inflate(layoutInflater)
     }
@@ -34,6 +30,7 @@ class WelcomeFragment: BaseFragment<FragmentWelcomeBinding>() {
 
         })
     }
+
 
     private fun navigate() {
         if (HomeViewModel.instance().isLock()){
